@@ -1,1 +1,7 @@
 #copy a file using ansible
+- hosts: local
+  tasks:
+  - copy:
+      scr:
+      dest:
+      
