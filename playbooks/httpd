@@ -1,0 +1,12 @@
+---
+- name: Set up httpd webserver
+  hosts: Ubuntu hosts
+  tasks:
+  - name: Install httpd rpm
+    yum: name=httpd
+  - name: start httpd service
+    service: name=httpd state=started
+  - name: open port 80
+    firewalld: service=httpd permanent=true state=enabled
+  - name: start the firewalld service
+    service: name=firewalld state=restarted
