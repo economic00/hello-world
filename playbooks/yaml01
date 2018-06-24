@@ -1,7 +1,7 @@
 ---
 #Test YAML file (.yml) for ansible
 #How do you write a YAML file
-#let's copy a file
+#let us copy a file
 
 - hosts: all
   tasks:
