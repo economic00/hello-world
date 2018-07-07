@@ -1,11 +1,10 @@
 ---
 
 - hosts: localhost
-  vars:
-    aws_access_key: '{{acc_k}}'
-    aws_secret_key: '{{sec_k}}'
   tasks:
   - ec2_group_facts:
+      aws_access_key: '{{acc_k}}'
+      aws_secret_key: '{{sec_k}}'
       region: us-west-2
       filters:
         vpc-id: sg-e57faf95
