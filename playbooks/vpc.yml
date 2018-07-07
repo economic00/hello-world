@@ -6,3 +6,4 @@
     aws_secret_key: '{{sec_k}}'
   tasks:
   - ec2_group_facts:
+    region: us-west-2
