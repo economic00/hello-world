@@ -2,7 +2,7 @@
 
 - hosts: localhost
   vars:
-    aws_access_key: {{acc_k}}
-    aws_secret_key: {{sec_k}}
+    aws_access_key: {{ acc_k }}
+    aws_secret_key: {{ sec_k }}
   tasks:
   - ec2_group_facts:
