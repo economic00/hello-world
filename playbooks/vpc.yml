@@ -3,8 +3,8 @@
 - hosts: localhost
   tasks:
   - ec2_group_facts:
-      aws_access_key: 'AKIAIWXT5KIXC3IEARCQ'
-      aws_secret_key: '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'
+      aws_access_key: ''
+      aws_secret_key: ''
       region: us-west-2
       filters:
         vpc-id: sg-e57faf95
