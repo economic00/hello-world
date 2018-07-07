@@ -1,3 +1,5 @@
 ---
 
-  #this is an another test 
+- hosts: localhost
+  tasks:
+  - ec2_group_facts:
