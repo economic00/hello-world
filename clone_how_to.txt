@@ -1,0 +1,2 @@
+#These are the steps on how to clone the repo on Linux Acadamy servers to local machine
+
