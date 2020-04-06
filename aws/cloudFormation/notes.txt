@@ -1,0 +1,3 @@
+ElasticBeanstalk app stack
+Need:
+- keypair
