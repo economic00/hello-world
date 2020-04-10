@@ -22,14 +22,13 @@ internet_gateway_id = internet_gateway_info['InternetGatewayId']
 attach_gateway = client.attach_internet_gateway(InternetGatewayId = internet_gateway_id, VpcId = vpc_id)
 
 #create subnet
-subnet_response = client.create_subnet(
-    CidrBlock='10.0.1.0/24',
-    VpcId = vpc_id
-)
+subnet_response = client.create_subnet(CidrBlock='10.0.1.0/24', VpcId = vpc_id)
 
 subnet_info = subnet_response['Subnet']
 subnet_id = subnet_info['SubnetId']
 vpc_of_subnet = subnet_info['VpcId']
+
+tag_subnet = client.create_tags(Resources = [subnet_id], Tags = [{'Key': 'Name', 'Value': 'TestSubnet00'}])
 
 print(subnet_id, vpc_of_subnet)
 
@@ -50,4 +49,7 @@ for route in route_info:
 #create a route to the internet
 new_route = client.create_route(DestinationCidrBlock = '0.0.0.0/0', GatewayId = internet_gateway_id, RouteTableId = route_id)
 
-print(new_route)
+#print(new_route)
+
+key_pair_name = client.create_key_pair(KeyName='keyPairTest00')
+print(key_pair_name)
