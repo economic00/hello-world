@@ -1,3 +1,10 @@
 ElasticBeanstalk app stack
 Need:
 - keypair
+
+
+VPC Build
+- add route to the subnet (or already has it)
+- add route 0.0.0.0/0 to target igw
+
+
