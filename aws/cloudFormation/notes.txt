@@ -1,7 +1,9 @@
 ElasticBeanstalk app stack:
 
 
-VPC Build:
+VPC Build file:
+- NACL
+- create a secuity group
 
 
 S3 Static Website
