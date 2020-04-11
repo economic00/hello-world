@@ -7,4 +7,9 @@ VPC Build
 - add route to the subnet (or already has it)
 - add route 0.0.0.0/0 to target igw
 
+S3 Static Website
+- create bucket
+- make public
+- enable static web hosting
+- configure bucket policy
 
